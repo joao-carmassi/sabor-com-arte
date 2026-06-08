@@ -1,6 +1,5 @@
-import { cn } from '@/lib/utils';
 import type { ClassNameValue } from 'tailwind-merge';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Avatar, AvatarImage } from './ui/avatar';
 
 interface Props {
   className: ClassNameValue;

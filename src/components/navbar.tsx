@@ -18,7 +18,6 @@ import {
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet';
-import { cn } from '@/lib/utils';
 import type { OptimizedPicture } from '@/utils/get-picture-image';
 import { Picture } from './ui/picture';
 import getZapLink from '@/utils/get-zap-link';

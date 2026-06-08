@@ -74,13 +74,7 @@ const FEATURES: Array<feature> = [
   },
 ];
 
-interface RestaurantDifferentialsProps {
-  className?: string;
-}
-
-const RestaurantDifferentials = ({
-  className,
-}: RestaurantDifferentialsProps) => {
+const RestaurantDifferentials = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
