@@ -8,6 +8,8 @@ import { loadEnv } from 'vite';
 
 import mdx from '@astrojs/mdx';
 
+import vercel from '@astrojs/vercel';
+
 const { PUBLIC_BASE_PATH } = loadEnv(process.env.NODE_ENV, process.cwd(), '');
 
 // https://astro.build/config
@@ -15,8 +17,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
   site: PUBLIC_BASE_PATH,
   integrations: [react(), sitemap(), robotsTxt(), mdx()],
+
   fonts: [
     {
       provider: fontProviders.google(),
@@ -35,4 +39,6 @@ export default defineConfig({
       optimizedFallbacks: true,
     },
   ],
+
+  adapter: vercel(),
 });
