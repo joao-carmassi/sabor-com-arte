@@ -1,0 +1,137 @@
+---
+import Layout from '@/layouts/layout.astro';
+import { getBasePath, getCardapioPdfUrl } from '@/utils/env';
+import serialize from 'serialize-javascript';
+import type { WithContext, Menu, BreadcrumbList } from 'schema-dts';
+
+const cardapioSchema: WithContext<Menu> = {
+  '@context': 'https://schema.org',
+  '@type': 'Menu',
+  name: 'Cardápio do Restaurante Sabor com Arte',
+  description:
+    'Explore nosso cardápio completo, repleto de pratos deliciosos e autênticos. Descubra as especialidades da casa, incluindo a famosa Truta Flambada, além de opções variadas para todos os gostos. Venha saborear o melhor da gastronomia regional em um ambiente acolhedor e com vista para a Pedra do Baú.',
+  url: `${getBasePath()}/cardapio`,
+  hasMenuSection: [
+    {
+      '@type': 'MenuSection',
+      name: 'Entradas',
+      hasMenuItem: [
+        {
+          '@type': 'MenuItem',
+          name: 'Salada de Folhas Verdes',
+          description: 'Mix de folhas verdes frescas com molho vinagrete.',
+          offers: {
+            '@type': 'Offer',
+            price: '15.00',
+            priceCurrency: 'BRL',
+          },
+        },
+        {
+          '@type': 'MenuItem',
+          name: 'Caldinho de Feijão',
+          description:
+            'Tradicional caldinho de feijão servido com torresmo crocante.',
+          offers: {
+            '@type': 'Offer',
+            price: '12.00',
+            priceCurrency: 'BRL',
+          },
+        },
+      ],
+    },
+    {
+      '@type': 'MenuSection',
+      name: 'Pratos Principais',
+      hasMenuItem: [
+        {
+          '@type': 'MenuItem',
+          name: 'Truta Flambada',
+          description:
+            'Nossa especialidade! Truta fresca flambada no conhaque, servida com arroz branco e legumes salteados.',
+          offers: {
+            '@type': 'Offer',
+            price: '45.00',
+            priceCurrency: 'BRL',
+          },
+        },
+        {
+          '@type': 'MenuItem',
+          name: 'Moqueca de Peixe',
+          description:
+            'Deliciosa moqueca feita com peixe fresco, leite de coco e dendê, acompanhada de arroz e farofa.',
+          offers: {
+            '@type': 'Offer',
+            price: '40.00',
+            priceCurrency: 'BRL',
+          },
+        },
+      ],
+    },
+  ],
+};
+
+const breadcrumbSchema: WithContext<BreadcrumbList> = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: getBasePath() },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Cardápio',
+      item: `${getBasePath()}/cardapio`,
+    },
+  ],
+};
+---
+
+<Layout
+  title='Cardápio - Restaurante Sabor com Arte'
+  description='Explore nosso cardápio completo, repleto de pratos deliciosos e autênticos. Descubra as especialidades da casa, incluindo a famosa Truta Flambada, além de opções variadas para todos os gostos. Venha saborear o melhor da gastronomia regional em um ambiente acolhedor e com vista para a Pedra do Baú.'
+  canonical={`${getBasePath()}/cardapio`}
+  openGraph={{
+    basic: {
+      title: 'Cardápio - Restaurante Sabor com Arte',
+      type: 'website',
+      image: `${getBasePath()}/og-image.jpg`,
+      url: `${getBasePath()}/cardapio`,
+    },
+    optional: {
+      description:
+        'Explore nosso cardápio completo, repleto de pratos deliciosos e autênticos. Descubra as especialidades da casa, incluindo a famosa Truta Flambada, além de opções variadas para todos os gostos. Venha saborear o melhor da gastronomia regional em um ambiente acolhedor e com vista para a Pedra do Baú.',
+      siteName: 'Restaurante Sabor com Arte',
+      locale: 'pt_BR',
+    },
+    image: {
+      alt: 'Prato de Truta Flambada do Restaurante Sabor com Arte, com vista para a Pedra do Baú em São Bento do Sapucaí',
+    },
+  }}
+  twitter={{
+    card: 'summary_large_image',
+    title: 'Cardápio - Restaurante Sabor com Arte',
+    description:
+      'Explore nosso cardápio completo, repleto de pratos deliciosos e autênticos. Descubra as especialidades da casa, incluindo a famosa Truta Flambada, além de opções variadas para todos os gostos. Venha saborear o melhor da gastronomia regional em um ambiente acolhedor e com vista para a Pedra do Baú.',
+    image: `${getBasePath()}/og-image.jpg`,
+    imageAlt:
+      'Prato de Truta Flambada do Restaurante Sabor com Arte, com vista para a Pedra do Baú em São Bento do Sapucaí',
+  }}
+>
+  <script
+    is:inline
+    type='application/ld+json'
+    set:html={serialize(cardapioSchema)}
+    slot='head'
+  />
+  <script
+    is:inline
+    type='application/ld+json'
+    set:html={serialize(breadcrumbSchema)}
+    slot='head'
+  />
+  <main>
+    <iframe
+      src={getCardapioPdfUrl()}
+      class='w-full min-h-svh'
+      title='Cardápio do Restaurante Sabor com Arte'></iframe>
+  </main>
+</Layout>

@@ -1,0 +1,218 @@
+---
+import { HomeComplexCta } from '@/components/homepage/home-complex-cta';
+import { HomeContact } from '@/components/homepage/home-contact';
+import { HomeFaq } from '@/components/homepage/home-faq';
+import { HomeTrustStrip } from '@/components/homepage/home-trust-strip';
+import { MenuCategories } from '@/components/homepage/menu-categories';
+import { TroutSpecialties } from '@/components/homepage/trout-specialties';
+import { CustomerTestimonials } from '@/components/homepage/customer-testimonials';
+import Layout from '@/layouts/layout.astro';
+import { getBasePath } from '@/utils/env';
+import serialize from 'serialize-javascript';
+import HomeHero from '@/components/homepage/home-hero';
+import { HomeAbout } from '@/components/homepage/home-about';
+import img1 from '@/assets/comida/17.jpg';
+import img2 from '@/assets/comida/280.jpg';
+import img3 from '@/assets/comida/7.jpg';
+import img4 from '@/assets/comida/57.jpg';
+import img5 from '@/assets/comida/108.jpg';
+import getPictureImage from '@/utils/get-picture-image';
+import type {
+  WithContext,
+  Restaurant,
+  FAQPage,
+  BreadcrumbList,
+} from 'schema-dts';
+
+const restaurantSchema: WithContext<Restaurant> = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Restaurante Sabor com Arte',
+  description:
+    'Restaurante especializado em Truta Flambada em São Bento do Sapucaí, SP. Vista para a Pedra do Baú, fogão a lenha, buffet livre aos fins de semana e mais de 34 pratos à la carte.',
+  url: getBasePath(),
+  telephone: '+55-12-3971-1471',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress:
+      'Rodovia Benedito Gomes de Souza, Km 5, Bairro do Paiol Grande',
+    addressLocality: 'São Bento do Sapucaí',
+    addressRegion: 'SP',
+    postalCode: '12490-000',
+    addressCountry: 'BR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: -22.675175,
+    longitude: -45.68203,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      opens: '11:00',
+      closes: '17:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Friday', 'Saturday', 'Sunday'],
+      opens: '11:00',
+      closes: '23:00',
+    },
+  ],
+  servesCuisine: [
+    'Brasileira',
+    'Gastronomia Regional',
+    'Frutos do Mar',
+    'Peixes',
+  ],
+  hasMenu: `${getBasePath()}/cardapio`,
+  priceRange: '$$',
+  acceptsReservations: 'True',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.3',
+    reviewCount: '511',
+    bestRating: '5',
+  },
+  sameAs: [
+    'https://www.tripadvisor.com.br/Restaurant_Review-g2535594-d3908792',
+    'https://www.facebook.com/saborcomarterestaurante',
+    'https://www.instagram.com/saborcomarte1',
+  ],
+};
+
+const faqSchema: WithContext<FAQPage> = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Precisa fazer reserva para almoçar no Sabor com Arte?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Não é obrigatório, mas recomendamos reserva para fins de semana e feriados, especialmente se quiser uma mesa no deck externo com vista para a Pedra do Baú.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Qual o horário de funcionamento do restaurante?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'De segunda a quinta, das 11h às 17h. Sexta, sábado e domingo, das 11h às 23h. Feriados seguem o horário do fim de semana.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quando é o buffet livre?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'O buffet à vontade é servido nos sábados, domingos e feriados, das 12h às 16h. Inclui saladas, proteínas (com truta em destaque), acompanhamentos e sobremesas da casa como Petit Gateau, Fondue e Banana Flambada com sorvete.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Fazem delivery para pousadas e chalés?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sim! Fazemos delivery para hospedagens próximas, incluindo os chalés da Pousada Riacho Doce. Peça pelo WhatsApp: (12) 99671-7118.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Como chegar ao Restaurante Sabor com Arte?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Estamos no Km 5 da Rodovia Benedito Gomes de Souza, no Bairro do Paiol Grande, em São Bento do Sapucaí (SP). A 5 km do centro da cidade, com estacionamento privativo.',
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema: WithContext<BreadcrumbList> = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Início',
+      item: getBasePath(),
+    },
+  ],
+};
+
+const homepageImages = await Promise.all([
+  getPictureImage({ src: img1, width: 800, height: 600 }),
+  getPictureImage({ src: img2, width: 800, height: 600 }),
+  getPictureImage({ src: img3, width: 800, height: 600 }),
+  getPictureImage({ src: img4, width: 800, height: 600 }),
+  getPictureImage({ src: img5, width: 800, height: 600 }),
+]);
+---
+
+<Layout
+  title='Restaurante Sabor com Arte | Truta Flambada em São Bento do Sapucaí'
+  description='Restaurante especializado em Truta Flambada em São Bento do Sapucaí, SP. Vista para a Pedra do Baú, fogão a lenha, buffet livre aos fins de semana. ⭐ 4,3/5 no Tripadvisor · +511 avaliações.'
+  canonical={getBasePath()}
+  openGraph={{
+    basic: {
+      title:
+        'Restaurante Sabor com Arte | Truta Flambada em São Bento do Sapucaí',
+      type: 'website',
+      image: `${getBasePath()}/og-image.jpg`,
+      url: getBasePath(),
+    },
+    optional: {
+      description:
+        'Especialidade em Truta Flambada, vista para a Pedra do Baú e fogão a lenha. Buffet livre aos fins de semana. Conheça o restaurante mais querido de São Bento do Sapucaí.',
+      siteName: 'Restaurante Sabor com Arte',
+      locale: 'pt_BR',
+    },
+    image: {
+      alt: 'Deck externo do Restaurante Sabor com Arte com vista para a Pedra do Baú em São Bento do Sapucaí',
+    },
+  }}
+  twitter={{
+    card: 'summary_large_image',
+    title:
+      'Restaurante Sabor com Arte | Truta Flambada em São Bento do Sapucaí',
+    description:
+      'Especialidade em Truta Flambada em São Bento do Sapucaí. ⭐ 4,3/5 no Tripadvisor.',
+    image: `${getBasePath()}/og-image.jpg`,
+    imageAlt:
+      'Deck externo do Restaurante Sabor com Arte com vista para a Pedra do Baú',
+  }}
+>
+  <!-- JSON-LD Schema -->
+  <script
+    is:inline
+    type='application/ld+json'
+    set:html={serialize(restaurantSchema)}
+    slot='head'
+  />
+  <script
+    is:inline
+    type='application/ld+json'
+    set:html={serialize(faqSchema)}
+    slot='head'
+  />
+  <script
+    is:inline
+    type='application/ld+json'
+    set:html={serialize(breadcrumbSchema)}
+    slot='head'
+  />
+  <main>
+    <HomeHero images={homepageImages} client:load />
+    <HomeTrustStrip client:load />
+    <HomeAbout />
+    <TroutSpecialties />
+    <MenuCategories />
+    <CustomerTestimonials />
+    <!-- <RestaurantDifferentials client:visible /> -->
+    <HomeFaq client:visible />
+    <HomeComplexCta />
+    <HomeContact />
+  </main>
+</Layout>
