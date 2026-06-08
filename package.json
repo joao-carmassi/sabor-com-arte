@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "eslint src/**/* && astro build",
+    "build": "eslint src --ext .js,.jsx,.ts,.tsx,.astro && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
