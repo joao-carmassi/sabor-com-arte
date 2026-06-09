@@ -29,7 +29,7 @@ const HomeContact = () => {
               </p>
               <a
                 href={`mailto:${getPUBLIC_EMAIL()}`}
-                className='hover:underline'
+                className='hover:underline break-all'
               >
                 {getPUBLIC_EMAIL()}
               </a>
