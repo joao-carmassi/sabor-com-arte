@@ -7,11 +7,6 @@ import {
 
 const faqs = [
   {
-    question: 'Precisa fazer reserva para almoçar no Sabor com Arte?',
-    answer:
-      'Não é obrigatório, mas recomendamos reserva para fins de semana e feriados, especialmente se quiser uma mesa no deck externo com vista para a Pedra do Baú. Reserve pelo WhatsApp: (12) 99671-7118.',
-  },
-  {
     question: 'Qual o horário de funcionamento do restaurante?',
     answer:
       'De segunda a quinta, das 11h às 17h. Sexta, sábado e domingo, das 11h às 23h. Feriados seguem o horário do fim de semana.',
@@ -19,7 +14,7 @@ const faqs = [
   {
     question: 'Quando é o buffet livre?',
     answer:
-      'O buffet à vontade é servido nos sábados, domingos e feriados, das 12h às 16h. Inclui saladas, proteínas (com truta em destaque), acompanhamentos e sobremesas da casa como Petit Gateau, Fondue e Banana Flambada com sorvete.',
+      'O buffet à vontade é servido nos sábados, domingos e feriados, das 12h às 16h. Inclui saladas, proteínas (com truta em destaque), acompanhamentos e sobremesas da casa como Doce de leite, doce de abóbora, doce de banana e goiabada cremosa.',
   },
   {
     question: 'Vocês fazem delivery para pousadas e chalés?',

@@ -50,7 +50,7 @@ const FEATURES: Array<feature> = [
     label: 'Sábados, Domingos e Feriados',
     icon: Workflow,
     description:
-      'Buffet à vontade das 12h às 16h com truta em destaque, saladas, acompanhamentos e sobremesas da casa: Petit Gateau, Fondue e Banana Flambada com sorvete.',
+      'Buffet à vontade das 12h às 16h com truta em destaque, saladas, acompanhamentos e sobremesas da casa: Doce de leite, doce de abóbora, doce de banana e goiabada cremosa.',
     background:
       'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/sam-wermut-FiUuNWxnb3k-unsplash.jpg',
   },
