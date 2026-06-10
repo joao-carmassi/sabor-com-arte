@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge';
-import imgBase1 from '@/assets/comida/371.jpeg';
+import imgBase1 from '@/assets/comida/381.jpeg';
 import imgBase2 from '@/assets/comida/357.jpg';
 import imgBase3 from '@/assets/comida/380.jpg';
 import imgBase4 from '@/assets/comida/46.jpg';

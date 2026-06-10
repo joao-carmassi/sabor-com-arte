@@ -12,7 +12,7 @@ import serialize from 'serialize-javascript';
 import HomeHero from '@/components/homepage/home-hero';
 import { HomeAbout } from '@/components/homepage/home-about';
 import img1 from '@/assets/comida/17.jpg';
-import img2 from '@/assets/comida/280.jpg';
+import img2 from '@/assets/comida/382.jpeg';
 import img3 from '@/assets/comida/7.jpg';
 import img4 from '@/assets/comida/57.jpg';
 import img5 from '@/assets/comida/108.jpg';
@@ -135,11 +135,11 @@ const breadcrumbSchema: WithContext<BreadcrumbList> = {
 };
 
 const homepageImages = await Promise.all([
-  getPictureImage({ src: img1, width: 800, height: 600 }),
-  getPictureImage({ src: img2, width: 800, height: 600 }),
-  getPictureImage({ src: img3, width: 800, height: 600 }),
-  getPictureImage({ src: img4, width: 800, height: 600 }),
-  getPictureImage({ src: img5, width: 800, height: 600 }),
+  getPictureImage({ src: img1, width: 354, height: 265 }),
+  getPictureImage({ src: img2, width: 680, height: 680 }),
+  getPictureImage({ src: img3, width: 354, height: 265 }),
+  getPictureImage({ src: img4, width: 354, height: 265 }),
+  getPictureImage({ src: img5, width: 354, height: 265 }),
 ]);
 ---
 
