@@ -55,11 +55,11 @@ const FEATURES: Array<feature> = [
       'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/sam-wermut-FiUuNWxnb3k-unsplash.jpg',
   },
   {
-    title: 'Fogão a Lenha e Lareira',
+    title: 'Lareira e Ambiente Aconchegante',
     label: 'Tradição da Serra',
     icon: ShieldCheck,
     description:
-      'Nossa cozinha é aquecida pelo fogão a lenha. No mezanino, a lareira torna os dias frios da serra ainda mais aconchegantes.',
+      'No mezanino, a lareira transforma os dias frios da serra em momentos de puro aconchego. O ambiente aquecido é o cenário perfeito para uma refeição inesquecível.',
     background:
       'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-Kj2tYAl4HZg-unsplash.jpg',
   },

@@ -66,9 +66,9 @@ const TroutSpecialties = async () => {
             </h3>
             <div className=''>
               <p className='mb-8 font-normal text-muted-foreground'>
-                Mais de 18 sabores de pizza no forno a lenha, panquecas doces e
-                salgadas, cortes selecionados de carne e porções generosas. Tem
-                para todo gosto e toda a família.
+                Mais de 18 sabores de pizza, panquecas doces e salgadas, cortes
+                selecionados de carne e porções generosas. Tem para todo gosto e
+                toda a família.
               </p>
               <a
                 href={getZapLink(

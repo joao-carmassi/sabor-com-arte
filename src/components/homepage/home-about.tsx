@@ -34,8 +34,8 @@ const HomeAbout = async () => {
               <p className='max-w-2xl text-lg font-normal text-muted-foreground md:text-xl text-justify md:text-left'>
                 Fundado com a missão de celebrar os sabores da região serrana,
                 nosso restaurante é reconhecido pela especialidade em truta,
-                pelo fogão a lenha e pelo atendimento caloroso que faz cada
-                visita parecer um retorno para casa.
+                pela lareira aconchegante e pelo atendimento caloroso que faz
+                cada visita parecer um retorno para casa.
               </p>
             </div>
           </div>
@@ -75,9 +75,9 @@ const HomeAbout = async () => {
               </p>
               <p className='max-w-2xl text-lg font-normal text-muted-foreground md:text-xl text-justify md:text-left'>
                 Nossa cozinha é comandada com dedicação e respeito à tradição
-                serrana. O fogão a lenha é o coração do restaurante — é nele que
-                nascem os caldos, os assados e o tempero único que os clientes
-                reconhecem desde a primeira garfada.
+                serrana. É o cuidado com cada receita, o tempero apurado e o
+                respeito aos ingredientes frescos que os clientes reconhecem
+                desde a primeira garfada.
               </p>
               <p className='max-w-2xl text-lg font-normal text-muted-foreground md:text-xl text-justify md:text-left'>
                 Aos fins de semana, o buffet livre reúne famílias inteiras em
