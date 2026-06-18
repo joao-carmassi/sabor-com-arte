@@ -10,9 +10,11 @@ import { Font } from 'astro:assets';
 interface Props extends SEOProps {
   title: string;
   description?: string;
+  navbar?: boolean;
+  footer?: boolean;
 }
 
-const { ...props } = Astro.props as Props;
+const { navbar = true, footer = true, ...props } = Astro.props as Props;
 
 const logo = await getPictureImage({
   src: logoBase,
@@ -41,8 +43,8 @@ const logo = await getPictureImage({
     <slot name='head' />
   </head>
   <body>
-    <Navbar logo={logo} client:visible />
+    {navbar && <Navbar logo={logo} client:visible />}
     <slot />
-    <Footer />
+    {footer && <Footer />}
   </body>
 </html>

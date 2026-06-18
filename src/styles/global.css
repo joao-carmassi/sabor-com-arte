@@ -110,7 +110,7 @@ Uncomment to import Google fonts if you want to use them in your project.
 }
 
 @theme inline {
-  --min-height-svh: calc(100svh - 3.5rem);
+  --min-height-svh: calc(100svh - 3.75rem);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
