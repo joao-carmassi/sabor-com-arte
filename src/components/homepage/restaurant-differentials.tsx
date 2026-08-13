@@ -41,7 +41,7 @@ const FEATURES: Array<feature> = [
     label: 'Ambiente Único',
     icon: Globe,
     description:
-      'O deck externo com vista direta para a Pedra do Baú é o ambiente mais disputado do restaurante. Reserve com antecedência.',
+      'O deck externo com vista direta para a Pedra do Baú é o ambiente mais disputado do restaurante. Atendimento por ordem de chegada — chegue cedo nos fins de semana.',
     background:
       'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg',
   },

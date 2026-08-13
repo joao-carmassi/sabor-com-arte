@@ -52,7 +52,7 @@ const TroutSpecialties = async () => {
                 )}
                 className='text-sm underline'
               >
-                Reservar uma mesa
+                Pedir pelo WhatsApp
               </a>
             </div>
           </div>
@@ -128,7 +128,7 @@ const TroutSpecialties = async () => {
                 )}
                 className='text-sm underline'
               >
-                Reservar uma mesa
+                Pedir pelo WhatsApp
               </a>
             </div>
           </div>

@@ -40,14 +40,6 @@ const defaultProps = {
         'Buffet variado com saladas, peixes e carnes — o salmão é divino. Ambiente aconchegante, ideal para reunir a família com uma vista linda.',
     },
     {
-      name: 'Journey419095929721',
-      role: 'Casal',
-      avatar:
-        'https://deifkwefumgah.cloudfront.net/shadcnblocks/image-set/modern/avatars/avatar22.jpg',
-      content:
-        'Refeição feita com arte: truta caipira saborosa e mesas nos fundos com vista das montanhas. Acesso a riacho cristalino deixa a experiência ainda melhor.',
-    },
-    {
       name: 'Davi Eichman',
       role: 'São Paulo, SP',
       avatar:

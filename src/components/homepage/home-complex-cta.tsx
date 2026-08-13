@@ -48,7 +48,7 @@ const list = [
   },
   {
     icon: CalendarDays,
-    text: 'Reserve com antecedência para garantir a data',
+    text: 'Combine a data com antecedência pelo WhatsApp',
   },
 ];
 

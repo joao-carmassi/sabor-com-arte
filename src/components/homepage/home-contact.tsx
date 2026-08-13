@@ -64,7 +64,7 @@ const HomeContact = () => {
               <MessageCircle className='mb-4 size-5 text-muted-foreground' />
               <p className='mb-1 font-medium'>WhatsApp</p>
               <p className='mb-4 text-sm text-muted-foreground'>
-                Clique para reservar ou tirar dúvidas pelo WhatsApp.
+                Clique para fazer seu pedido ou tirar dúvidas pelo WhatsApp.
               </p>
               <a
                 href={getZapLink(

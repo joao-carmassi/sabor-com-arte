@@ -60,13 +60,13 @@ const HomeAmbiences = ({ className }: HomeAmbiencesProps) => {
             <p className='text-muted-foreground'>
               O ambiente mais requisitado do restaurante. Mesas ao ar livre com
               vista direta para a Pedra do Baú — perfeito para o almoço do fim
-              de semana. Reserve com antecedência.
+              de semana. Atendimento por ordem de chegada.
             </p>
             <a
-              href='https://wa.me/5512996717118?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20no%20deck%20externo%20do%20Sabor%20com%20Arte.'
+              href='https://wa.me/5512996717118?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20deck%20externo%20do%20Sabor%20com%20Arte.'
               className='inline-flex items-center font-medium hover:underline'
             >
-              <span>Reservar mesa no deck</span>
+              <span>Saber mais sobre o deck</span>
               <MoveRight strokeWidth={2} className='ml-2 size-4' />
             </a>
           </div>
@@ -100,10 +100,10 @@ const HomeAmbiences = ({ className }: HomeAmbiencesProps) => {
               serra — aquecido e aconchegante.
             </p>
             <a
-              href='https://wa.me/5512996717118?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Sabor%20com%20Arte.'
+              href='https://wa.me/5512996717118?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20Sabor%20com%20Arte.'
               className='inline-flex items-center font-medium hover:underline'
             >
-              <span>Fazer uma reserva</span>
+              <span>Falar pelo WhatsApp</span>
               <MoveRight strokeWidth={2} className='ml-2 size-4' />
             </a>
           </div>

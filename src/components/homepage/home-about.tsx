@@ -95,7 +95,7 @@ const HomeAbout = async () => {
                       'Olá! Gostaria de fazer um pedido para o Restaurante Sabor com Arte.',
                     )}
                   >
-                    Reservar pelo WhatsApp
+                    Pedir pelo WhatsApp
                   </a>
                 </Button>
               </div>

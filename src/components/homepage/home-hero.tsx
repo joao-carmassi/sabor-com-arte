@@ -93,7 +93,7 @@ const HomeHero = ({ images }: { images: OptimizedPicture[] }) => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                Reservar pelo WhatsApp
+                Pedir pelo WhatsApp
               </a>
             </Button>
           </div>

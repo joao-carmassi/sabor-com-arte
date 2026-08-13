@@ -20,22 +20,12 @@ const cardapioSchema: WithContext<Menu> = {
           '@type': 'MenuItem',
           name: 'Salada de Folhas Verdes',
           description: 'Mix de folhas verdes frescas com molho vinagrete.',
-          offers: {
-            '@type': 'Offer',
-            price: '15.00',
-            priceCurrency: 'BRL',
-          },
         },
         {
           '@type': 'MenuItem',
-          name: 'Caldinho de Feijão',
+          name: 'Farofa de Pinhão',
           description:
-            'Tradicional caldinho de feijão servido com torresmo crocante.',
-          offers: {
-            '@type': 'Offer',
-            price: '12.00',
-            priceCurrency: 'BRL',
-          },
+            'Acompanhamento clássico da serra: pinhão cozido e picado, tostado na manteiga com alho e cebola.',
         },
       ],
     },
@@ -47,23 +37,36 @@ const cardapioSchema: WithContext<Menu> = {
           '@type': 'MenuItem',
           name: 'Truta Flambada',
           description:
-            'Nossa especialidade! Truta fresca flambada no conhaque, servida com arroz branco e legumes salteados.',
-          offers: {
-            '@type': 'Offer',
-            price: '45.00',
-            priceCurrency: 'BRL',
-          },
+            'Nossa especialidade! Truta fresca flambada no conhaque na sua mesa. Servida somente à la carte.',
         },
         {
           '@type': 'MenuItem',
-          name: 'Moqueca de Peixe',
+          name: 'Truta Recheada com Queijo',
           description:
-            'Deliciosa moqueca feita com peixe fresco, leite de coco e dendê, acompanhada de arroz e farofa.',
-          offers: {
-            '@type': 'Offer',
-            price: '40.00',
-            priceCurrency: 'BRL',
-          },
+            'Truta fresca da Serra da Mantiqueira recheada com queijo, acompanhada de farofa de pinhão.',
+        },
+        {
+          '@type': 'MenuItem',
+          name: 'Truta Grelhada',
+          description:
+            'Truta fresca grelhada, servida com acompanhamentos da roça.',
+        },
+      ],
+    },
+    {
+      '@type': 'MenuSection',
+      name: 'Sobremesas',
+      hasMenuItem: [
+        {
+          '@type': 'MenuItem',
+          name: 'Banana Flambada',
+          description: 'Banana flambada servida quente com sorvete.',
+        },
+        {
+          '@type': 'MenuItem',
+          name: 'Petit Gateau',
+          description:
+            'Bolo de chocolate com interior cremoso, servido quente com sorvete.',
         },
       ],
     },
