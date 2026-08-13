@@ -17,6 +17,11 @@ const faqs = [
       'O buffet à vontade é servido nos sábados, domingos e feriados, das 12h às 16h. Inclui saladas, proteínas (com truta em destaque), acompanhamentos e sobremesas da casa: doce de leite, doce de abóbora, doce de cidra, doce de abacaxi, goiabada cremosa e o tradicional doce de banana. A Truta Flambada é servida somente à la carte.',
   },
   {
+    question: 'Vocês aceitam reserva de mesa?',
+    answer:
+      'Não trabalhamos com reserva de mesa. O atendimento é por ordem de chegada, tanto no à la carte quanto no buffet, inclusive em feriados. A única exceção são grupos grandes e eventos com planejamento especial, que precisam de pré-reserva: entre em contato pelo WhatsApp (12) 99671-7118.',
+  },
+  {
     question: 'Vocês fazem delivery para pousadas e chalés?',
     answer:
       'Sim! Fazemos delivery para hospedagens próximas, incluindo os chalés da Pousada Riacho Doce. Peça pelo WhatsApp: (12) 99671-7118.',

@@ -48,7 +48,7 @@ const list = [
   },
   {
     icon: CalendarDays,
-    text: 'Combine a data com antecedência pelo WhatsApp',
+    text: 'Pré-reserva para grupos e eventos — entre em contato',
   },
 ];
 
