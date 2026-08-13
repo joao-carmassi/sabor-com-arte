@@ -68,8 +68,8 @@ const HomeHero = ({ images }: { images: OptimizedPicture[] }) => {
             — Na Frente da Pedra do Baú
           </h1>
           <p className='mt-6 text-lg text-muted-foreground md:text-xl max-w-4xl mx-auto gsap-hero opacity-0'>
-            Buffet livre nos fins de semana e a famosa Truta Flambada que você
-            não vai esquecer. A 5 km do centro, com vista para o cartão-postal
+            Buffet livre nos fins de semana e a famosa Truta Flambada, servida
+            somente à la carte. A 5 km do centro, com vista para o cartão-postal
             da Serra da Mantiqueira.
           </p>
           <div className='mt-6 md:mt-8 flex justify-center gap-2'>

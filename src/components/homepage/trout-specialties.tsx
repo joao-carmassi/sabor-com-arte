@@ -41,8 +41,9 @@ const TroutSpecialties = async () => {
             <div>
               <p className='mb-8 font-normal text-muted-foreground'>
                 7 preparos exclusivos com truta fresca da Serra da Mantiqueira —
-                flambada, recheada com queijo, grelhada, ao molho e no buffet. O
-                prato que faz todo mundo voltar.
+                recheada com queijo, grelhada, ao molho e no buffet. A Truta
+                Flambada é servida somente à la carte. O prato que faz todo
+                mundo voltar.
               </p>
               <a
                 target='_blank'

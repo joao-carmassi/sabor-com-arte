@@ -82,8 +82,9 @@ const HomeAbout = async () => {
               <p className='max-w-2xl text-lg font-normal text-muted-foreground md:text-xl text-justify md:text-left'>
                 Aos fins de semana, o buffet livre reúne famílias inteiras em
                 torno de uma mesa farta: saladas frescas, trutas preparadas de
-                diferentes formas, acompanhamentos da roça, sobremesas da casa —
-                Petit Gateau, Fondue, Banana Flambada — e muito mais. Um
+                diferentes formas, acompanhamentos da roça e as sobremesas da
+                casa — doce de leite, doce de abóbora, doce de cidra, doce de
+                abacaxi, goiabada cremosa e o tradicional doce de banana. Um
                 verdadeiro festim na serra.
               </p>
               <div>

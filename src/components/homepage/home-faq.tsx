@@ -14,7 +14,7 @@ const faqs = [
   {
     question: 'Quando é o buffet livre?',
     answer:
-      'O buffet à vontade é servido nos sábados, domingos e feriados, das 12h às 16h. Inclui saladas, proteínas (com truta em destaque), acompanhamentos e sobremesas da casa como Doce de leite, doce de abóbora, doce de banana e goiabada cremosa.',
+      'O buffet à vontade é servido nos sábados, domingos e feriados, das 12h às 16h. Inclui saladas, proteínas (com truta em destaque), acompanhamentos e sobremesas da casa: doce de leite, doce de abóbora, doce de cidra, doce de abacaxi, goiabada cremosa e o tradicional doce de banana. A Truta Flambada é servida somente à la carte.',
   },
   {
     question: 'Vocês fazem delivery para pousadas e chalés?',

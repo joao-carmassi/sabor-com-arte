@@ -32,7 +32,7 @@ const FEATURES: Array<feature> = [
     label: 'Prato Assinatura',
     icon: Sparkles,
     description:
-      'Flambada na sua mesa com conhaque e ervas frescas. Um espetáculo gastronômico que nenhum outro restaurante da região oferece.',
+      'Flambada na sua mesa com conhaque e ervas frescas, servida somente à la carte. Um espetáculo gastronômico que nenhum outro restaurante da região oferece.',
     background:
       'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jeremy-bishop-iEjCQtcsVPY-unsplash.jpg',
   },
@@ -50,7 +50,7 @@ const FEATURES: Array<feature> = [
     label: 'Sábados, Domingos e Feriados',
     icon: Workflow,
     description:
-      'Buffet à vontade das 12h às 16h com truta em destaque, saladas, acompanhamentos e sobremesas da casa: Doce de leite, doce de abóbora, doce de banana e goiabada cremosa.',
+      'Buffet à vontade das 12h às 16h com truta em destaque, saladas, acompanhamentos e sobremesas da casa: doce de leite, doce de abóbora, doce de cidra, doce de abacaxi, goiabada cremosa e o tradicional doce de banana.',
     background:
       'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/sam-wermut-FiUuNWxnb3k-unsplash.jpg',
   },
