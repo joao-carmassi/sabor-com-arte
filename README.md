@@ -1,43 +1,73 @@
-# Astro Starter Kit: Minimal
+# Sabor com Arte
+
+Restaurant in São Bento do Sapucaí, SP, known for flambéed trout, weekend buffet and a view of Pedra do Baú.
+
+![Sabor com Arte screenshot](docs/screenshot.webp)
+
+**Live:** <https://sabor-com-arte-5rao.vercel.app>
+
+## Features
+
+- Browse the full menu, embedded as a PDF on the Cardápio page
+- Order through WhatsApp with one-tap links from the navbar and the hero
+- Read the blog with local dining guides and restaurant tips (MDX posts)
+- Find the restaurant on an embedded Google Maps map, plus a FAQ section
+- Discover the sister businesses: Pousada Riacho Doce (chalets) and Artesanato Paiol das Artes (crafts)
+- Search-friendly pages with JSON-LD structured data, sitemap and robots.txt
+
+## Tech stack
+
+- Astro 6 (static pages, React islands) with the Vercel adapter
+- React 19, Tailwind CSS 4, shadcn/ui on Radix UI
+- GSAP and Framer Motion for animations
+- MDX for blog posts, Inter and Cormorant Garamond fonts via Astro's font API
+- Hosted on Vercel
+
+## Getting started
+
+### Prerequisites
+
+- Node.js 22.12.0 or newer
+
+### Install
 
 ```sh
-npm create astro@latest -- --template minimal
+git clone https://github.com/joao-carmassi/sabor-com-arte.git
+cd sabor-com-arte
+npm install
+cp .env.example .env
+# Fill in the variables in .env (see Configuration), then:
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open http://localhost:4321 in your browser.
 
-## 🚀 Project Structure
+To check the production build locally:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm run build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Configuration
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Copy `.env.example` to `.env` and set these variables. The site throws at build or render time if any of them is empty.
 
-Any static assets, like images, can be placed in the `public/` directory.
+| Variable | Purpose |
+| :--- | :--- |
+| `PUBLIC_BASE_PATH` | Public site URL, used for canonical links, sitemap and structured data |
+| `PUBLIC_CARDAPIO_PDF_URL` | URL of the menu PDF embedded on the Cardápio page |
+| `PUBLIC_ZAP_NUMBER` | WhatsApp number used by the order links (country code and area code, digits only) |
+| `PUBLIC_PHONE_NUMBER` | Phone number shown on the site |
+| `PUBLIC_EMAIL` | Contact email shown on the site |
 
-## 🧞 Commands
+## Deployment
 
-All commands are run from the root of the project, from a terminal:
+The site is deployed on Vercel through the `@astrojs/vercel` adapter. Add the same variables from `.env` to the Vercel project's environment settings, and set `PUBLIC_BASE_PATH` to the production URL.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## License
 
-## 👀 Want to learn more?
+No license specified.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+Made by [João Carmassi](https://github.com/joao-carmassi)
